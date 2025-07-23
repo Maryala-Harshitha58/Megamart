@@ -1,0 +1,84 @@
+﻿/*@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+    background-color: white;
+}
+
+.main {
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+    .main .image-container {
+        padding: 10px;
+    }
+
+        .main .image-container .image {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+            .main .image-container .image img {
+                width: 170px;
+                align-items: center;
+            }
+
+        .main .image-container h1 {
+            color: white;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 40px;
+        }
+
+        .main .image-container p {
+            color: white;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+    .main .input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40vw;
+        height: 50px;
+        border-radius: 20px;
+        background-color:antiquewhite;
+    }
+
+        .main .input .talk {
+            background-color:antiquewhite;
+            outline: none;
+            border: none;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+            .main .input .talk i {
+                font-size: 30px;
+                color:antiquewhite;
+            }
+
+        .main .input .content {
+            color: antiquewhite;
+            font-size: 15px;
+            margin-right: 20px;
+        }

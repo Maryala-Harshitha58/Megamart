@@ -1,0 +1,515 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{129CA64A-75C8-4951-B068-3CB9BF4CDBCD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>www.Megamart.com</RootNamespace>
+    <AssemblyName>www.Megamart.com</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44340</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xmlworker, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itextsharp.xmlworker.5.5.13.3\lib\itextsharp.xmlworker.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data">
+      <HintPath>C:\Program Files (x86)\MySQL\MySQL Installer for Windows\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Razorpay, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Razorpay.3.0.2\lib\net45\Razorpay.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1663342290853.jpeg" />
+    <Content Include="1663343020745.png" />
+    <Content Include="247.png" />
+    <Content Include="3roses.jpg" />
+    <Content Include="About Us.aspx" />
+    <Content Include="antisepiccream.jpg" />
+    <Content Include="apple.jpg" />
+    <Content Include="assistant1.html" />
+    <Content Include="assistant2.html" />
+    <Content Include="assistantjs1.js" />
+    <Content Include="assistantjs2.js" />
+    <Content Include="back.jpg" />
+    <Content Include="back4.jpg" />
+    <Content Include="banana.jpg" />
+    <Content Include="beautiful.jpg" />
+    <Content Include="blackarrow.png" />
+    <Content Include="bottleguard.jpg" />
+    <Content Include="brinjal.jpg" />
+    <Content Include="button-30.wav" />
+    <Content Include="cabbage.jpg" />
+    <Content Include="cabbage2.jpg" />
+    <Content Include="calciumcapsule.jpg" />
+    <Content Include="cancelorder.aspx" />
+    <Content Include="cancelorder2.jpg" />
+    <Content Include="chanadal.jpg" />
+    <Content Include="Cherry Tomato _ 1 pint box - Cherry Tomato _ 1 Pint Box.png" />
+    <Content Include="chill.jpg" />
+    <Content Include="clickalert.html" />
+    <Content Include="coc.aspx" />
+    <Content Include="coc.jpg" />
+    <Content Include="cocola.jpg" />
+    <Content Include="cocsuccess.aspx" />
+    <Content Include="cod.aspx" />
+    <Content Include="cod.jpg" />
+    <Content Include="colgate.jpg" />
+    <Content Include="cooldrinks.aspx" />
+    <Content Include="cooldrinlks.jpg" />
+    <Content Include="cosmetics.aspx" />
+    <Content Include="cosmetics1.jpg" />
+    <Content Include="DE4-e-commerce-tem1427_20220623172340_theedgemarkets.jpg" />
+    <Content Include="dermscarscream.jpg" />
+    <Content Include="digest-tablet.jpg" />
+    <Content Include="dis2.jpg" />
+    <Content Include="discount.jpg" />
+    <Content Include="dovebodylosh.jpg" />
+    <Content Include="drumstick.jpg" />
+    <Content Include="electronics.jpg" />
+    <Content Include="email.jpg" />
+    <Content Include="emailback.jpg" />
+    <Content Include="eno2.jpg" />
+    <Content Include="eyeliner.jpeg" />
+    <Content Include="fanta.jpg" />
+    <Content Include="feedback.aspx" />
+    <Content Include="feedback.jpg" />
+    <Content Include="feedbackdemo.jpg" />
+    <Content Include="forgot.aspx" />
+    <Content Include="fruits.aspx" />
+    <Content Include="fruits2.jpg" />
+    <Content Include="furniture.jpg" />
+    <Content Include="grapes.jpg" />
+    <Content Include="greenchilli.jpg" />
+    <Content Include="groceryaspx.aspx" />
+    <Content Include="grocry1.jpg" />
+    <Content Include="h1.jpg" />
+    <Content Include="himalayacream.jpg" />
+    <Content Include="Home.aspx" />
+    <Content Include="home2.jpg" />
+    <Content Include="hydraserm.jpg" />
+    <Content Include="icons8-circle-50.png" />
+    <Content Include="images\0.jpg" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\2.jpg" />
+    <Content Include="images\3.jpg" />
+    <Content Include="images\4.jpg" />
+    <Content Include="images\5.jpg" />
+    <Content Include="images\6.jpg" />
+    <Content Include="images\7.jpg" />
+    <Content Include="IMG_20221009_220558.png" />
+    <Content Include="ItemsList.aspx" />
+    <Content Include="itl.cat_vegetable-wallpaper_2917775.png" />
+    <Content Include="johnsonoil.jpg" />
+    <Content Include="ladiesfinger2.jpg" />
+    <Content Include="ladiesfinger3.jpg" />
+    <Content Include="lakmecream.jpg" />
+    <Content Include="lipstick.jpg" />
+    <Content Include="location.aspx" />
+    <Content Include="lux.jpg" />
+    <Content Include="mail.aspx" />
+    <Content Include="manage2.png" />
+    <Content Include="mango.jpg" />
+    <Content Include="markerLOGO.jpg" />
+    <Content Include="maza.jpg" />
+    <Content Include="mega4.jpg" />
+    <Content Include="megamart.aspx" />
+    <Content Include="mosDERMcream.jpg" />
+    <Content Include="mtn2.jpg" />
+    <Content Include="nivea2.jpg" />
+    <Content Include="one.jpg" />
+    <Content Include="onion.jpg" />
+    <Content Include="onlineshop.jpg" />
+    <Content Include="oplaced.gif" />
+    <Content Include="orange.jpg" />
+    <Content Include="orangejuice.jpg" />
+    <Content Include="order.png" />
+    <Content Include="orderdetails.aspx" />
+    <Content Include="orderplaced.aspx" />
+    <Content Include="orders.aspx" />
+    <Content Include="orders2.png" />
+    <Content Include="orders3.png" />
+    <Content Include="palli.jpg" />
+    <Content Include="papaya.jpg" />
+    <Content Include="paracetomol.jpg" />
+    <Content Include="paydetails.aspx" />
+    <Content Include="payment.aspx" />
+    <Content Include="paymentcheckout.aspx" />
+    <Content Include="pepsi.jpg" />
+    <Content Include="PHARMACY.aspx" />
+    <Content Include="pharmacy1.jpeg" />
+    <Content Include="phones.png" />
+    <Content Include="pineapple.jpg" />
+    <Content Include="pngkit_grocery-png_847270.png" />
+    <Content Include="pomagrante.jpg" />
+    <Content Include="pondsgel.jpg" />
+    <Content Include="potato.jpg" />
+    <Content Include="rclick-13693.mp3" />
+    <Content Include="salt.jpg" />
+    <Content Include="sermsyrup.jpg" />
+    <Content Include="services.aspx" />
+    <Content Include="sevenup.jpg" />
+    <Content Include="shop2.jpg" />
+    <Content Include="signup.aspx" />
+    <Content Include="signup.jpg" />
+    <Content Include="son.jpg" />
+    <Content Include="sparyyardely.jpg" />
+    <Content Include="spinach.jpg" />
+    <Content Include="spirte.jpg" />
+    <Content Include="stinng.jpg" />
+    <Content Include="strawberry.jpg" />
+    <Content Include="styleall.css" />
+    <Content Include="StyleSheet1.css" />
+    <Content Include="success2.png" />
+    <Content Include="sugar.jpg" />
+    <Content Include="sunfloweroil.jpg" />
+    <Content Include="supermarket-949913.jpg" />
+    <Content Include="thumpsup.jpg" />
+    <Content Include="tide.jpg" />
+    <Content Include="up3.jpg" />
+    <Content Include="upi-bg3.png" />
+    <Content Include="upi2.jpg" />
+    <Content Include="upipay1.png" />
+    <Content Include="User.aspx" />
+    <Content Include="userLogin.aspx" />
+    <Content Include="userlogo.jpg" />
+    <Content Include="vapour.jpg" />
+    <Content Include="vaseline.jpg" />
+    <Content Include="vb12.jpg" />
+    <Content Include="vegetables.aspx" />
+    <Content Include="voice.jpg" />
+    <Content Include="voicealert.html" />
+    <Content Include="voicealert.js" />
+    <Content Include="watermelon.jpg" />
+    <Content Include="Web.config" />
+    <Content Include="Welcome.aspx" />
+    <Content Include="world.jpg" />
+    <Content Include="yardely.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About Us.aspx.cs">
+      <DependentUpon>About Us.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About Us.aspx.designer.cs">
+      <DependentUpon>About Us.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cancelorder.aspx.cs">
+      <DependentUpon>cancelorder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cancelorder.aspx.designer.cs">
+      <DependentUpon>cancelorder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="coc.aspx.cs">
+      <DependentUpon>coc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="coc.aspx.designer.cs">
+      <DependentUpon>coc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cocsuccess.aspx.cs">
+      <DependentUpon>cocsuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cocsuccess.aspx.designer.cs">
+      <DependentUpon>cocsuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cod.aspx.cs">
+      <DependentUpon>cod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cod.aspx.designer.cs">
+      <DependentUpon>cod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cooldrinks.aspx.cs">
+      <DependentUpon>cooldrinks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cooldrinks.aspx.designer.cs">
+      <DependentUpon>cooldrinks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cosmetics.aspx.cs">
+      <DependentUpon>cosmetics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cosmetics.aspx.designer.cs">
+      <DependentUpon>cosmetics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="feedback.aspx.cs">
+      <DependentUpon>feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="feedback.aspx.designer.cs">
+      <DependentUpon>feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forgot.aspx.cs">
+      <DependentUpon>forgot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forgot.aspx.designer.cs">
+      <DependentUpon>forgot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fruits.aspx.cs">
+      <DependentUpon>fruits.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fruits.aspx.designer.cs">
+      <DependentUpon>fruits.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="groceryaspx.aspx.cs">
+      <DependentUpon>groceryaspx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="groceryaspx.aspx.designer.cs">
+      <DependentUpon>groceryaspx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ItemsList.aspx.cs">
+      <DependentUpon>ItemsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ItemsList.aspx.designer.cs">
+      <DependentUpon>ItemsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="location.aspx.cs">
+      <DependentUpon>location.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="location.aspx.designer.cs">
+      <DependentUpon>location.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mail.aspx.cs">
+      <DependentUpon>mail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mail.aspx.designer.cs">
+      <DependentUpon>mail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="megamart.aspx.cs">
+      <DependentUpon>megamart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="megamart.aspx.designer.cs">
+      <DependentUpon>megamart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="orderdetails.aspx.cs">
+      <DependentUpon>orderdetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orderdetails.aspx.designer.cs">
+      <DependentUpon>orderdetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="orderplaced.aspx.cs">
+      <DependentUpon>orderplaced.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orderplaced.aspx.designer.cs">
+      <DependentUpon>orderplaced.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="orders.aspx.cs">
+      <DependentUpon>orders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orders.aspx.designer.cs">
+      <DependentUpon>orders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paydetails.aspx.cs">
+      <DependentUpon>paydetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paydetails.aspx.designer.cs">
+      <DependentUpon>paydetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="payment.aspx.cs">
+      <DependentUpon>payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="payment.aspx.designer.cs">
+      <DependentUpon>payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paymentcheckout.aspx.cs">
+      <DependentUpon>paymentcheckout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paymentcheckout.aspx.designer.cs">
+      <DependentUpon>paymentcheckout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PHARMACY.aspx.cs">
+      <DependentUpon>PHARMACY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PHARMACY.aspx.designer.cs">
+      <DependentUpon>PHARMACY.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="services.aspx.cs">
+      <DependentUpon>services.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="services.aspx.designer.cs">
+      <DependentUpon>services.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="signup.aspx.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="signup.aspx.designer.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User.aspx.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User.aspx.designer.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userLogin.aspx.cs">
+      <DependentUpon>userLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userLogin.aspx.designer.cs">
+      <DependentUpon>userLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vegetables.aspx.cs">
+      <DependentUpon>vegetables.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vegetables.aspx.designer.cs">
+      <DependentUpon>vegetables.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Welcome.aspx.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Welcome.aspx.designer.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ENO.webp" />
+    <None Include="packages.config" />
+    <Content Include="vegetables2.webp" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_GlobalResources\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50957</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44340/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
